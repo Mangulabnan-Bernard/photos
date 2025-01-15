@@ -15,6 +15,10 @@ const mocksUrls = [
   "https://mxatayqbwx.ufs.sh/f/PwsLPXIQSutRJvDZYau2cqsG9Igepjb1vQzrOAU0ti3uyXl7",
   "https://mxatayqbwx.ufs.sh/f/PwsLPXIQSutR77xR5Pg54HL3SyQOxgcdluKkomVjriqTv9P2",
   "https://mxatayqbwx.ufs.sh/f/PwsLPXIQSutRKDYVm6X8kLTRVqaJOEfSBZHY4QvGhy92Uw5z",
+  "https://mxatayqbwx.ufs.sh/f/PwsLPXIQSutRWBLZG506ABbsZl8uCJIVg4SOGR7xr5Dd3kFL",
+  "https://mxatayqbwx.ufs.sh/f/PwsLPXIQSutRY4tR3olVnTiEXQMj1qLgy9vsl5pbUW3D7fBP",
+  "https://mxatayqbwx.ufs.sh/f/PwsLPXIQSutRocqfLdzMcIlGB9ACk03Yyh2qjtfT4vDJEg68",
+  "https://mxatayqbwx.ufs.sh/f/PwsLPXIQSutRFB4MZucK0QeEqUDxv1kNtAyVBi5b384WZmXs",
 
 ];
 
@@ -29,14 +33,17 @@ export default function HomePage() {
       <div className="flex flex-wrap gap-4"/>
       <h1 className="text-center text-2xl font-bold my-4">All Photos</h1>
       <div className="flex flex-wrap gap-4">
-        {mocksImages.map((image) => (
-          <div key={image.id} className="w-48">
-            <img 
-              src={image.url} 
-              alt={`Image ${image.id}`} 
-              width={580} 
-              height={420} 
-              className="object-cover" 
+      {mocksImages.map((image) => (
+          <div
+            key={image.id}
+            className="w-48 h-48 overflow-hidden border-2 border-black"
+          >
+            <img
+              src={image.url}
+              alt={`Image ${image.id}`}
+              width={562}
+              height={352}
+              className="object-cover w-full h-full"
             />
           </div>
         ))}
