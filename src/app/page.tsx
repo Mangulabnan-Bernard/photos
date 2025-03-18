@@ -51,7 +51,7 @@ export default function HomePage() {
        
 
       </div>
-
+hi
       <div className="flex flex-wrap gap-4 justify-center">
         {mocksImages.map((image) => (
           <div
